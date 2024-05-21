@@ -21,5 +21,5 @@ Route::get('/home', function() {
     return view('home');
 });
 Route::get('/about',function(){
-    return view('about')->name('');
-});
+    return view('about');
+})->name('about');
