@@ -12,14 +12,29 @@
                     <div class="mb-2">
                         <label for="" class="form-label">User name</label>
                         <input name="username" type="text" class="form-control">
+                        @error('username')
+                            <div class="alert alert-danger" role="alert">
+                                {{ $message }}
+                            </div>
+                        @enderror
                     </div>
                     <div class="mb-2">
                         <label for="" class="form-label">User Email</label>
                         <input name="useremail" type="text" class="form-control">
+                        @error('useremail')
+                            <div class="alert alert-danger" role="alert">
+                                {{ $message }}
+                            </div>
+                        @enderror
                     </div>
                     <div class="mb-2">
                         <label for="" class="form-label">User Password</label>
                         <input name="userpassword" type="password" class="form-control">
+                        @error('userpassword')
+                            <div class="alert alert-danger" role="alert">
+                                {{ $message }}
+                            </div>
+                        @enderror
                     </div>
                     <div class="mb-2 mt-4">
                         <button type="submit" class="btn btn-primary ">sign Up</button>
