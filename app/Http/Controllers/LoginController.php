@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\loginRequest;
 use Illuminate\Http\Request;
 
 class LoginController extends Controller
@@ -10,19 +11,8 @@ class LoginController extends Controller
         return view('login');
     }
 
-    public function handlelogin(Request $request){
-        //dd($request->all());
-        // $request->validate([
-        //     'username' => 'required|string|min:6',
-        //     'useremail' => 'required|email',
-        //     'userpassword' => 'required|string|min:8',
-        // ], [
-        //     'username.required' => 'This field cannot be empty',
-        //     'useremail.required' => 'This field cannot be empty',
-        //     'userpassword.required' => 'This field cannot be empty',
-        // ]);
-
-        // return $request;
+    public function handlelogin(loginRequest $request){
+        
         $messages = [
             'username.required' => 'This field cannot be empty',
             'username.string' => 'The username must be a string',
