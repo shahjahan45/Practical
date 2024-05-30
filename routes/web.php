@@ -19,3 +19,5 @@ Route::get('/', function () {
 });
 
 Route::get('/login',[LoginController::class,'index'])->name('login');
+
+Route::post('/login',[LoginController::class,'handlelogin'])->name('login.submit');
