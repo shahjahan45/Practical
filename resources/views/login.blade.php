@@ -11,7 +11,7 @@
                 <div class="card-body">
                     <div class="mb-2">
                         <label for="" class="form-label">User name</label>
-                        <input name="username" type="text" class="form-control">
+                        <input name="username" type="text" class="form-control mb-2">
                         @error('username')
                             <div class="alert alert-danger" role="alert">
                                 {{ $message }}
@@ -20,16 +20,16 @@
                     </div>
                     <div class="mb-2">
                         <label for="" class="form-label">User Email</label>
-                        <input name="useremail" type="text" class="form-control">
+                        <input name="useremail" type="text" class="form-control mb-2">
                         @error('useremail')
-                            <div class="alert alert-danger" role="alert">
+                            <div class="alert alert-danger" role="alert" >
                                 {{ $message }}
                             </div>
                         @enderror
                     </div>
                     <div class="mb-2">
                         <label for="" class="form-label">User Password</label>
-                        <input name="userpassword" type="password" class="form-control">
+                        <input name="userpassword" type="password" class="form-control mb-2">
                         @error('userpassword')
                             <div class="alert alert-danger" role="alert">
                                 {{ $message }}
